@@ -1,0 +1,251 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+
+    <title>Intertec</title>
+    <!-- Favicon -->
+    <link href="resources/favicon.png" rel="icon" type="image/png">
+
+    <link rel="stylesheet" href="resources/css/default.css">
+
+    <!-- Essential styles -->
+    <link rel="stylesheet" href="resources/assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="resources/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="resources/assets/fancybox/jquery.fancybox.css">
+
+    <!-- Boomerang styles -->
+    <link id="wpStylesheet" rel="stylesheet" type="text/css" href="resources/css/global-style.css" media="screen">
+
+    <!-- Boomerang styles -->
+    <link rel="stylesheet" type="text/css" href="resources/css/side-menu.css" media="screen">
+
+    <!-- Required JS async 또는 defer 속성을 넣으면 안됨.-->
+    <script src="resources/js/jquery-1.11.3.min.js"></script>
+    <script src="resources/js/jquery-ui.min.js"></script>
+
+    <!-- Essentials -->
+    <script src="resources/assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="resources/js/jquery.hoverup.js"></script>
+    <script src="resources/js/jquery.hoverdir.js"></script>
+    <script src="resources/js/jquery.stellar.js"></script>
+
+</head>
+
+<body>
+    <!-- HEADER -->
+    <div class="container">
+        <div id="divHeaderWrapper">
+            <header class="header-standard-2">
+                <!-- MAIN NAV -->
+                <div class="navbar navbar-wp navbar-arrow mega-nav" role="navigation">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse"
+                            data-target=".navbar-collapse">
+                            <i class="fa fa-bars icon-custom"></i>
+                        </button>
+                        <a class="navbar-brand" href=""> <img src="img/main-logo.png" >
+                        </a> 
+                    </div>
+                    <div class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="hidden-md hidden-lg">
+                                <div class="bg-light-gray">
+                                    <form class="form-horizontal form-light p-15" role="form">
+                                        <div class="input-group input-group-lg">
+                                            <input type="text" class="form-control" placeholder="I want to find ...">
+                                            <span class="input-group-btn">
+                                                <button class="btn btn-white" type="button">
+                                                    <i class="fa fa-search"></i>
+                                                </button>
+                                            </span>
+                                        </div>
+                                    </form>
+                                </div>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><strong></strong></a>
+                                <ul class="dropdown-menu">
+                                    <c:forEach var="category" items="">
+                                        <li><a href=""></a>
+                                    </c:forEach>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href='' class="dropdown-toggle" data-toggle="dropdown"><strong>
+                                        <fmt:message key="MEMBER" />
+                                    </strong></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="">
+                                            <fmt:message key="MY_INFO" />
+                                        </a>
+                                    <li><a href="">
+                                            <fmt:message key="UPDATE_USER_INFO" />
+                                        </a>
+                                    <li><a href="">
+                                            <fmt:message key="EXIT_MEMBER" />
+                                        </a>
+                                    <li><a href="">
+                                            <fmt:message key="SIGN_OUT" />
+                                        </a>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="">
+                                            <fmt:message key="JOIN_MEMBER" />
+                                        </a>
+                                </ul>
+                            </li>
+                            <li class="dropdown dropdown-aux animate-click" data-animate-in="animated"
+                                data-animate-out="animated fadeOutDown" style="z-index:500;">
+                                <a href="#" class="dropdown-form-toggle" data-toggle="dropdown"><i
+                                        class="fa fa-search"></i></a>
+                                <ul class="dropdown-menu dropdown-menu-user">
+                                    <li id="dropdownForm">
+                                        <div class="dropdown-form">
+                                            <form class="form-horizontal form-light p-15" action="" method="post"
+                                                role="form">
+                                                <div class="input-group">
+                                                    <input type="text" class="form-control" name="keyword"
+                                                        placeholder="키워드를 입력하세요.">
+                                                    <span class="input-group-btn">
+                                                        <input type="submit" class="btn btn-base" value="Go">
+                                                    </span>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div><!--/.nav-collapse -->
+                </div>
+            </header>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="pg-opt">
+            <div class="row">
+                <div class="col-md-6 pc">
+                    <h2></h2>
+                </div>
+                <div class="col-md-6">
+                    <ol class="breadcrumb">
+                        <li>
+                            <fmt:message key="DASHBOARD" />
+                        </li>
+                        <li class="active"></li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="alert alert-warning" class="page-header">
+                <h3></h3>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                    <a href="board/cat/1">카테고리 1번 게시판 리스트 보기</a><br>
+                    <a href="board/cat/2">카테고리 2번 게시판 리스트 보기</a><br>
+                    <a href="board/cat/3">카테고리 3번 게시판 리스트 보기</a><br>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">Intertec Intertec Intertec
+                    Intertec Intertec Intertec Intertec Intertec Intertec Intertec Intertec
+                    Intertec Intertec Intertec Intertec Intertec Intertec Intertec Intertec
+                    Intertec Intertec Intertec Intertec Intertec Intertec Intertec Intertec
+                    Intertec Intertec Intertec Intertec Intertec Intertec Intertec Intertec
+                    Intertec Intertec Intertec Intertec Intertec Intertec Intertec Intertec
+                    Intertec
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">Intertec Intertec Intertec
+                    Intertec Intertec Intertec Intertec Intertec Intertec Intertec Intertec
+                    Intertec Intertec Intertec Intertec Intertec Intertec Intertec Intertec
+                    Intertec Intertec Intertec Intertec Intertec Intertec Intertec Intertec
+                    Intertec Intertec Intertec Intertec Intertec Intertec Intertec Intertec
+                    Intertec Intertec Intertec Intertec Intertec Intertec Intertec Intertec
+                    Intertec
+                </div>
+            </div>
+            <div class="progress">
+                <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="100" aria-valuemin="0"
+                    aria-valuemax="100" style="width: 100%;">
+                    <span class="sr-only"></span>
+                </div>
+            </div>
+            <div class="progress">
+                <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="100" aria-valuemin="0"
+                    aria-valuemax="100" style="width: 100%;">
+                    <span class="sr-only"></span>
+                </div>
+            </div>
+            <div class="alert alert-info">
+                <ol>
+                    <li>Intertec Intertec Intertec Intertec Intertec Intertec Intertec Intertec
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="col">
+                        <h4>Contact us</h4>
+                        <ul>
+                            <li>Phone: 010 2799 0473</li>
+                            <li>Email: <a href="#" title="Email Us">whdgus1323@gmail.com</a>
+                            </li>
+                            <li><a href="#">https://intertec.co.kr/</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="col">
+                        <h4>Mailing list</h4>
+                        <p>Sign up if you would like to receive</p>
+                        <form action='#' method="post" class="form-horizontal form-light">
+                            <div class="input-group">
+                                <input type="email" name="email" class="form-control"
+                                    placeholder="Your email address..." required>
+                                <span class="input-group-btn">
+                                    <input type="submit" class="btn btn-base" value="GO!">
+                                </span>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="col col-social-icons">
+                        <h4>Follow us</h4>
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-google-plus"></i></a>
+                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="col">
+                        <h4>About us</h4>
+                        <p class="no-margin">
+                            인터텍입니다 문의주세요.
+                            <a href="" class="btn btn-block btn-base btn-icon fa-check"><span>Try it now</span></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
